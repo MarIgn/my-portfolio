@@ -1,0 +1,249 @@
+/*Info about the author 
+name: Marina Ignatjeva
+student ID number: mi18026
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap');
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	background-color: RGB(255,255,255);
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+
+.menu {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background-color: RGB(239,239,239);
+	justify-content:center;
+	display: flex;
+	height: 80px;
+}
+
+.upper-menu {
+	display: contents;
+	align-items: center;
+	color:RGB(205,152,152); 
+}
+
+.menu ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+
+
+.menu ul li ul li { 
+	font-size: 0.9em;  
+	display: block; 
+	background-color: RGB(239,239,239);
+	justify-content:center;
+}
+
+.menu ul li:hover ul {
+	display: block;
+}
+
+.menu:hover + ul {
+  display: block;
+  font-size: 0.9em;
+}
+
+a {
+	color:RGB(205,152,152);
+	text-decoration: none;
+}
+
+a:hover {
+	color:RGB(255,255,255);
+	text-decoration: none;
+}
+
+
+section.header {
+	font-style: italic;
+	background-image: url('../images/myportrait.jpg');
+	background-repeat: repeat;
+	height: 40vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	font-size:1.2em;
+	text-align: center;
+}
+
+
+h1{
+	color: RGB(255,255,255);
+	font-size: 45px;
+	text-shadow: 2px 2px 1px RGB(205,152,152);
+	text-align: center;
+	padding: 150px;
+}
+
+h2{
+	font-size: 0.9em;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	color: RGB(205,152,152);
+	font-size: 22px;
+	font-weight: bold;
+	text-align: right;
+	padding: 10px;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+}
+
+.social .social-btns img {
+	padding: 5px;
+	height: 30px;
+}
+
+
+.flex-container {
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.flex-container-many-rows {
+	width: 100vw;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+
+.flex-item {
+	height: 400px;
+	padding: 10px;
+}
+
+article {
+	height: 400px;
+	width: 600px;
+	position: relative;
+	line-height: 0;
+}
+
+article div {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 15%;
+	background-color: rgba(205,152,152,0.5);
+	line-height: 3em;
+	text-align: center;
+	color: RGB(255,255,255);
+	font-size: 0.8em;
+}
+
+article img {
+	width: 100%;
+}
+
+.section-portfolio img{
+	height: 400px;
+}
+
+
+.section-portfolio div{
+	display: flex;
+	justify-content: center;
+}
+
+h3{
+	color: RGB(0,0,0);
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px;
+}
+
+
+.section-about {
+
+}
+
+.section-about p {
+	color: RGB(132,132,132);
+	font-size: 25px;
+	line-height: 150%;
+	text-align: justify;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.section-about span {
+	color: RGB(205,152,152);
+	font-size: 25px;
+	line-height: 150%;
+	text-align: justify;
+	margin-left: 300px;
+}
+
+
+.section-about ol {
+	color: RGB(132,132,132);
+	font-size: 25px;
+	line-height: 150%;
+	text-align: justify;
+	margin-left: 300px;
+	margin-right: 300px;
+
+}
+
+.section-about img {
+	height: 400px;
+	float: left;
+	margin-right: 50px;
+}
+
+.section-about img:hover {
+	opacity: 75%;
+}
+
+.section-contactme {
+	min-height: 330px;
+	background-color: RGB(239,239,239);
+}
+
+.section-contactme p{
+	color: RGB(205,152,152);
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px;
+	margin-right: 20px;
+
+}
+
+textarea, input {
+	font-family: 'Playfair Display', serif;
+	font-size: 15px;
+	color: RGB(0,0,0);
+	
+}
+
+.bg-overlay {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.invalid {
+		border: 1px solid red;
+		color: red;
+}
